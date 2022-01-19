@@ -1,0 +1,16 @@
+.navbar-brand {
+    margin-left: 2% !important;
+}
+.navbar-dark .navbar-brand {
+    color: #08e3f9 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(46 255 8) !important;
+}
+.dropdown-menu {
+    background-color: #0000009c !important;
+}
+.dropdown-menu .dropdown-item {
+    color: rgb(46 255 8) !important;
+
+}
