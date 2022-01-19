@@ -14,3 +14,14 @@
     color: rgb(46 255 8) !important;
 
 }
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.959);
+    color: rgb(46 255 8);
+}
+.footer-main {
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgb(46 255 8);
+}
+.footer-copyright .tasks {
+    color: #08e3f9;
+}
