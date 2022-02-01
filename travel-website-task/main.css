@@ -48,6 +48,9 @@ body {
     .card-body-height {
         height: 150px!important;
     }  
+    .ds-card {
+        height: 450px!important
+    }
 }
 .img-center {
     position: absolute;
@@ -67,7 +70,16 @@ body {
     flex-wrap: wrap;
 }
 .blogs {
+    /* margin-bottom: 70px; */
     height: 550px;
+}
+.blogs .center {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.destination {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 .flex-container {
   display: flex;
@@ -103,9 +115,30 @@ body {
     flex: 20%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-    border-right: 3px solid #0000003d;
+    /* border-right: 3px solid #0000003d; */
 }
 .flex-4 {
     padding: 25px;
     flex: 30%;
+}
+.ds-card-img { 
+    border-radius: 5px!important;
+}
+.ds-card-add-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ds-card-row {
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
+}
+.trip-cost {
+    text-align: right;
+}
+.trip-kms{
+    font-size: 0.8rem!important;
+}
+.trip-days{
+    font-size: 0.8rem!important;
 }
