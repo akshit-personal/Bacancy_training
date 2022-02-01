@@ -16,9 +16,6 @@ body {
     margin-top: 20px;
     height: 50px!important;
 }
-/* .card-body-height {
-    height: 150px!important;
-} */
 .page-footer {
     margin: 100px 0px;
     background-color: rgb(225, 232, 248);
@@ -51,4 +48,64 @@ body {
     .card-body-height {
         height: 150px!important;
     }  
+}
+.img-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+/* .card-img-top {
+    opacity: 0.9;
+} */
+.flex-css {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.blogs {
+    height: 550px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+  /* background-color: rgb(250, 235, 215); */
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.flex-1 {
+  padding: 10px;
+  padding-bottom: 0px;
+  flex: 30%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-right: 3px solid #0000003d;
+}
+.flex-2 {
+    padding: 10px;
+    padding-bottom: 0px;
+    flex: 20%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-right: 3px solid #0000003d;
+}
+.flex-3 {
+    padding: 10px;
+    padding-bottom: 0px;
+    flex: 20%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+    border-right: 3px solid #0000003d;
+}
+.flex-4 {
+    padding: 25px;
+    flex: 30%;
 }
