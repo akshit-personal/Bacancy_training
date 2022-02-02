@@ -1,0 +1,174 @@
+body {
+    background-color: rgb(250, 235, 215);
+}
+.div-header{
+    text-align: center;
+}
+/* Navbar section */
+.navbar-nav-top {
+    margin-left: auto !important;
+}
+.nav-btn-design {
+    border-radius: 10px!important;
+    padding: 0px 10px!important;
+}
+/* Home Image section*/
+.home-img-opacity{
+    border-radius: 10px;
+    /* opacity: 0.7; */
+}
+/* Check for alterntive */
+            .home-img-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                text-align: center;
+            }
+            
+/*  */
+/* Card design for entire home-page-card */
+.card-design {
+    border: 0px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+/* home card-grid section*/
+.home-card-grid {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.home-card-grid-icons {
+    margin: 10px;
+    height: 50px!important;
+}
+/* Recommended Destination section */
+.rd {
+    background-color: rgb(250, 253, 255);
+}
+
+                .rd-nav{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .rd-nav-tab {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);  
+                    padding: 1% 2%;
+                }
+                .rd-nav-tab-active{
+                    border-bottom: 3px solid rgb(0, 0, 0); 
+                }
+
+.rd-card-row{
+    margin-top: 50px !important;
+    margin-bottom: 80px !important;
+}
+.rd-card-img{
+    border-radius: 5px!important;
+}
+.rd-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rd-card-trip-cost {
+    text-align: right;
+}
+/* Blog section */
+.blog-row {
+    text-align: center;
+    color: black;
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+}
+.blog-left {
+    background: url(https://www.planetware.com/photos-large/IND/india-top-attractions-varanasi.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    /*  */
+    /*  */
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15% 10%;
+    border-radius: 15px;
+}
+.blog-right-row1{
+     background: url(https://images.unsplash.com/photo-1594937113195-27f8b9046013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWlycGxhbmUlMjB3aW5kb3clMjB2aWV3fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.blog-right-row2{
+     background: url(https://www.thebrokebackpacker.com/wp-content/uploads/2019/03/Buckingham-Palace.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.blog-left-text {
+    padding: 2%;
+}
+/* Customer stories section */
+.cs-margin {
+    margin: 80px calc(-.5 * var(--bs-gutter-x))!important;
+}
+/* footer section */
+.footer {
+    margin: 100px 0px;
+    background-color: rgb(225, 232, 248);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.footer-para-middle-align {
+    margin-top: 1rem !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .home-img-text-para-header{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000fd;
+        font-size: 30px;
+        text-align: center;
+    }
+    .home-img-text-para-data {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .home-card-height {
+        height: 240px;
+    }
+    .rd-card {
+        height: 400px!important
+    }
+    .blog {
+        height: 650px;
+    }
+    .cs-card {
+        height: 280px !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .home-img-text {
+        display: none;
+    }
+} 

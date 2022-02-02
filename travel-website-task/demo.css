@@ -1,144 +1,209 @@
-.container{
-	padding:0,5px,0,5px;;
+body {
+    background-color: rgb(250, 235, 215);
 }
-.text_image{
+.btn-design {
+    border-radius: 12px!important;
+    padding: 0px 10px!important;
+}
+.img-thumbnail {
+    padding: 0!important;
+    opacity: 0.8;
+}
+.center {
+    text-align: center;
+}
+.front-icons {
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 50px!important;
+}
+.page-footer {
+    margin: 100px 0px;
+    background-color: rgb(225, 232, 248);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.col-5 p{
+    margin-top: 1rem!important;
+}
+.quote-color {
+    color: rgb(210, 221, 245);
+}
+.card {
+    border: 0px;
+    /* border-color: rgb(250, 235, 215)!important; */
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+.cs-margin-header {
+    margin: 100px 0px;
+}
+.front-div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.destination {
+    background-color: rgb(250, 253, 255);
+}
+
+@media only screen and (min-width: 1280px) {
+    .card-body-height {
+        height: 150px!important;
+    }  
+    .ds-card {
+        height: 450px!important
+    }
+}
+.img-center {
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 20px;
-}
-.carosal img{
-	opacity:0.7;
-	height:500px;
-	border:1px;
-	border-radius:30px;
-
-}
-#img_first_txt{
+    color: #000000fd;
     font-size: 30px;
+    text-align: center;
+}
+/* .card-img-top {
+    opacity: 0.9;
+} */
+.flex-css {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.blogs {
+    /* margin-bottom: 70px; */
+    height: 550px;
+}
+.blogs .center {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.destination {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+  /* background-color: rgb(250, 235, 215); */
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.flex-1 {
+  padding: 10px;
+  padding-bottom: 0px;
+  flex: 30%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-right: 3px solid #0000003d;
+}
+.flex-2 {
+    padding: 10px;
+    padding-bottom: 0px;
+    flex: 20%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-right: 3px solid #0000003d;
+}
+.flex-3 {
+    padding: 10px;
+    padding-bottom: 0px;
+    flex: 20%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+    /* border-right: 3px solid #0000003d; */
+}
+.flex-4 {
+    padding: 25px;
+    flex: 30%;
+}
+.ds-card-img { 
+    border-radius: 5px!important;
+}
+.ds-card-add-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ds-card-row {
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
+}
+.trip-cost {
+    text-align: right;
+}
+.trip-kms{
+    font-size: 0.8rem!important;
+}
+.trip-days{
+    font-size: 0.8rem!important;
+}
 
-}
-#beach_img{
-	filter: brightness(0.6);
-}
-.date{
+
+
+/* Additonal */
+.blog-row {
+    text-align: center;
     color: black;
-    font-size: 10px;
-    margin-left: 12%;
-    padding-left: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #f8f8ff9c;
-}
-.date .row strong{
-	padding-top:10px;
+    margin-top: 70px;
 }
 
-#ico2{
-
-	filter: grayscale();
-	padding: 2px;
-	border: 1px;
-	border-radius: 1rem;
-}
-.card-img-top{
-    width: 5rem;
-    height: 5rem;
-}
-
-.cardtab-body{
-    width: 25rem;
-    height: 25rem;
-}
-
-.cardtab-img{
-    width: 25rem;
-    height: 15rem;
-}
-
-.cardtab-text{
-    font-size: 0.8rem;
-}
-
-.cardtab-img-small{
-    width: 2rem;
-    height: 2rem;
-}
-
-.blog-img{
-    border-radius: 1rem;
-}
-#blog-img1{
-    width: 40rem;
-    height: 26.5rem;
-    position: absolute;
-}
-
-.blog-img2{
-    width: 35rem;
-    height: 13rem;
-    position: absolute;
-    border-radius: 1.5rem;
-}
-
-.blog-img3{
-    width: 35rem;
-    height: 13rem;
-    position: absolute;
-    border-radius: 2rem;
-}
-.text-on-blog-img{
-    position: relative;
-    font-size: 50px;
-    width: 40rem;
-    height: 26.5rem;
-    padding: 20px;
+.blog-left {
+    background: url(https://www.planetware.com/photos-large/IND/india-top-attractions-varanasi.jpg);
+    background-position: center center;
+    background-size: cover;
     color: white;
-    border-radius: 1rem;
-    background: rgba(0, 0, 0, 0.5);
+    /*  */
+    /*  */
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15% 10%;
+    border-radius: 15px;
 }
-
-.text-on-blog-img2{
-    position: relative;
-    font-size: 30px;
-    width: 33.5rem;
-    height: 13rem;
-    margin-left: 0.7rem;
+.blog-right-row1{
+     background: url(https://images.unsplash.com/photo-1594937113195-27f8b9046013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWlycGxhbmUlMjB3aW5kb3clMjB2aWV3fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-position: center center;
+    background-size: cover;
     color: white;
-    border-radius: 1.5rem;
-    background: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
-.text-on-blog-img3{
-    position: relative;
-    font-size: 30px;
-    width: 33.5rem;
-    height: 13rem;
-    margin-top: 0.1rem;
-    margin-left: 0.7rem;
+.blog-right-row2{
+     background: url(https://www.thebrokebackpacker.com/wp-content/uploads/2019/03/Buckingham-Palace.jpg);
+    background-position: center center;
+    background-size: cover;
     color: white;
-    border-radius: 1.5rem;
-    background: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
-.double-quote{
-    color: #e1e8f8;
-    padding-top: 0.3rem;
-    padding-right: 1rem;
+.blog-left-text {
+    padding: 2%;
 }
 
-.footer{
-    background-color: #e1e8f8;
-    height: 5rem;
-    margin: 1rem 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 1rem;
+.ds-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.nav-item.active{
-	font-weight:bold;
-	color:#15024d;
+.ds-header-text {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);  
+    padding: 1% 2%;
+}
+.ds-header-text-active {
+    border-bottom: 3px solid rgb(0, 0, 0); 
 }

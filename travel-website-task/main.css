@@ -5,6 +5,9 @@ body {
     border-radius: 12px!important;
     padding: 0px 10px!important;
 }
+.me-auto-top {
+    margin-left: auto !important;
+}
 .img-thumbnail {
     padding: 0!important;
     opacity: 0.8;
@@ -191,8 +194,19 @@ body {
     margin-left: 10px;
 }
 
-
-
 .blog-left-text {
     padding: 2%;
+}
+
+.ds-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ds-header-text {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);  
+    padding: 1% 2%;
+}
+.ds-header-text-active {
+    border-bottom: 3px solid rgb(0, 0, 0); 
 }
