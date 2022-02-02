@@ -47,26 +47,28 @@ body {
 .rd {
     background-color: rgb(250, 253, 255);
 }
-
-                .rd-nav{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                .rd-nav-tab {
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);  
-                    padding: 1% 2%;
-                }
-                .rd-nav-tab-active{
-                    border-bottom: 3px solid rgb(0, 0, 0); 
-                }
-
+.rd-nav-margin {
+    margin-top: 50px;
+}
+.rd-nav-tabs .nav-link {
+    color: rgb(73, 80, 87);
+}
+.rd-nav-tabs .nav-link.active {
+    border: transparent !important;
+    border-bottom: 4px solid   rgb(33, 37, 41) !important;
+    background-color: rgb(250, 253, 255) !important;
+}
+.rd-nav-tabs .nav-link:hover {
+    border: transparent !important;
+    color: rgb(73, 80, 87);
+}
 .rd-card-row{
     margin-top: 50px !important;
     margin-bottom: 80px !important;
 }
 .rd-card-img{
     border-radius: 5px!important;
+    height: 200px !important;
 }
 .rd-card-footer {
     display: flex;

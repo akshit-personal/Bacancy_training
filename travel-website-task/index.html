@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Travel Website</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='try.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <script src="https://kit.fontawesome.com/0a520c1d94.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -98,192 +98,749 @@
         <!-- Recommended destinations -->
         <div class="rd">
             <h3 class="div-header">Recommended Destination</h3>
-            <div class="rd-nav">
-                <div class="rd-nav-tab rd-nav-tab-active">The Weekend Break</div>
-                <div class="rd-nav-tab">The Package Holiday</div>
-                <div class="rd-nav-tab">The Groud Tour</div>
-                <div class="rd-nav-tab">Long Term Slow Travel</div>
-            </div>
-            <!-- Row-1 -->
-            <div class="row rd-card-row">
-                <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://imageio.forbes.com/blogs-images/alexcapri/files/2018/09/Singapore-1200x800.jpg?format=jpg&width=1200&fit=bounds" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Singapore</h5>
-                            <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
+            <nav class="rd-nav-margin">
+                <div class="nav nav-tabs justify-content-center rd-nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link nav-link active" id="nav-weekend-break-tab" data-bs-toggle="tab" data-bs-target="#nav-weekend-break" type="button" role="tab" aria-controls="nav-weekend-break" aria-selected="true">The Weekend Break</button>
+                    <button class="nav-link" id="nav-package-holiday-tab" data-bs-toggle="tab" data-bs-target="#nav-package-holiday" type="button" role="tab" aria-controls="nav-package-holiday" aria-selected="false">The Package Holiday</button>
+                    <button class="nav-link" id="nav-group-tour-tab" data-bs-toggle="tab" data-bs-target="#nav-group-tour" type="button" role="tab" aria-controls="nav-group-tour" aria-selected="false">The Group Tour</button>
+                    <button class="nav-link" id="nav-long-term-slow-travel-tab" data-bs-toggle="tab" data-bs-target="#nav-long-term-slow-travel" type="button" role="tab" aria-controls="nav-long-term-slow-travel" aria-selected="false">Long Term Slow Travel</button>
+                </div> 
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <!-- weekend break -->
+                <div class="tab-pane fade show active" id="nav-weekend-break" role="tabpanel" aria-labelledby="nav-weekend-break">
+                        <!-- weekend-break-row-1 -->
+                        <div class="row rd-card-row">
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://imageio.forbes.com/blogs-images/alexcapri/files/2018/09/Singapore-1200x800.jpg?format=jpg&width=1200&fit=bounds" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Singapore</h5>
+                                        <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
+                            </div>
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://www.insidehook.com/wp-content/uploads/2021/10/New-Zealand.png?fit=1500%2C1000" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">New Zealand</h5>
+                                        <p class="card-text">New Zealand is a island country in the southwestern Pacific Ocean</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://www.croda.com/mediaassets/images/corporate/careers/our-locations/asia/bangkok.jpg?la=en-gb&w=1920&focalpointcrop=1&xratio=0&yratio=0&hash=BE9AC72800AF8610791FF2627B45BDA2FD10D502" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Thailand</h5>
+                                        <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- weekend-break-row-2 -->
+                        <div class="row rd-card-row">
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/37242591.jpg?k=deb4d765a564823150f4758a47637a266cc0e43c35acd408a83527c05781e495&o=&hp=1" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bora Bora</h5>
+                                        <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Paris</h5>
+                                        <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card rd-card">
+                                    <img class="card-img-top rd-card-img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/typically-grand-shopping-street-in-high-res-stock-photography-1087015324-1555286086.jpg" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">London</h5>
+                                        <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
+                                        <div class="rd-card-footer">
+                                            <div class="rd-card-footer-left">
+                                                <div class="rd-card-footer-icons">
+                                                    <i class="fas fa-hotel"></i>
+                                                    <i class="fas fa-utensils"></i>
+                                                    <i class="fas fa-plane"></i>
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small>1000kms</small>
+                                                </div>
+                                            </div>
+                                            <div class="rd-card-footer-right">
+                                                <div class="rd-card-trip-cost">                                
+                                                    <i class="fas fa-rupee-sign"></i> 38,800
+                                                </div>
+                                                <div class="text-muted">
+                                                    <small> 2 night trip</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- the package holiday -->
+                <div class="tab-pane fade" id="nav-package-holiday" role="tabpanel" aria-labelledby="nav-package-holiday">
+                   <!-- package-holiday-row-1 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://static01.nyt.com/images/2017/04/15/world/15Paris-sub/15Paris-sub-superJumbo.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Paris</h5>
+                                    <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://cdn1.goibibo.com/voy_ing/t_fs/greater-london-london-163178391057o.jpeg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">London</h5>
+                                    <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://j9e9i9g5.rocketcdn.me/wp-content/uploads/2020/08/How-much-does-a-vacation-cost-in-Thailand-1.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Thailand</h5>
+                                    <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- package-holiday-row-2 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3puyym1dIMUoZIXMYtS_2wggL9-Lfv_ydw&usqp=CAU" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">New Zealand</h5>
+                                    <p class="card-text">New Zealand is a island country in the southwestern Pacific Ocean</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://images.thrillophilia.com/image/upload/s--aAS-fK_L--/c_fill,h_775,q_auto,w_1600/f_auto,fl_strip_profile/v1/images/photos/000/336/639/original/1596097478_cottages-in-the-middle-of-beach-753626.jpg.jpg?1596097478" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Bora Bora</h5>
+                                    <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWN9bD48qNckvjsKkQib3h6XjaTmJtpjcxQ&usqp=CAU" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Singapore</h5>
+                                    <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://www.insidehook.com/wp-content/uploads/2021/10/New-Zealand.png?fit=1500%2C1000" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">New Zealand</h5>
-                            <p class="card-text">New Zealand is a island country</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
+                <!-- the group tour -->
+                <div class="tab-pane fade" id="nav-group-tour" role="tabpanel" aria-labelledby="nav-group-tour">
+                     <!-- group-tour-row-1 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://www.goatsontheroad.com/wp-content/uploads/2018/09/places-to-visit-in-thailand-1.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Thailand</h5>
+                                    <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
+                            </div>
+                        </div>                       
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="data:image/jpeg;base64,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" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Bora Bora</h5>
+                                    <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwKZdkAlCLr0GL5d5xZn10GwEVAvnf4lEEWqqBYyp6MXwuVDwp_u_7fLCdBglN-nL33g&usqp=CAU" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Singapore</h5>
+                                    <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- group-tour-row-2 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Buckingham_Palace_UK.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">London</h5>
+                                    <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://www.contiki.com/six-two/wp-content/uploads/2020/10/robin-benzrihem-vEgAGlvQIyQ-unsplash.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">New Zealand</h5>
+                                    <p class="card-text">New Zealand is a island country in the southwestern Pacific Ocean</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://www.planetware.com/photos-large/F/france-paris-sacre-coeur.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Paris</h5>
+                                    <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://www.croda.com/mediaassets/images/corporate/careers/our-locations/asia/bangkok.jpg?la=en-gb&w=1920&focalpointcrop=1&xratio=0&yratio=0&hash=BE9AC72800AF8610791FF2627B45BDA2FD10D502" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Thailand</h5>
-                            <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
+                <!-- long term slow travel -->
+                <div class="tab-pane fade" id="nav-long-term-slow-travel" role="tabpanel" aria-labelledby="nav-long-term-slow-travel">
+                     <!-- long-term-slow-travel-row-1 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://cdn.theculturetrip.com/wp-content/uploads/2020/08/aoraki-mt-cook-new-zealand-e1597846479229.jpg" alt="..." height="200px"/>
+                                <div class="card-body">
+                                    <h5 class="card-title">New Zealand</h5>
+                                    <p class="card-text">New Zealand is a island country in the southwestern Pacific Ocean</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
+                            </div>
+                        </div>            
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4pJPPhVu3bRisxIU1nLW0CEU3Aw0X8x-9A&usqp=CAU" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Bora Bora</h5>
+                                    <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://www.catseducation.com/ugc-1/fullnews/news/2548/2600_big.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">London</h5>
+                                    <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- long-term-slow-travel-row-2 -->
+                    <div class="row rd-card-row">
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="http://cdn.cnn.com/cnnnext/dam/assets/200114073710-12-paris-reinvention.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Paris</h5>
+                                    <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxVczwfaOs-f_iL43g4RkSepmAjJ2fmNbiAg&usqp=CAU" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Thailand</h5>
+                                    <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card rd-card">
+                                <img class="card-img-top rd-card-img" src="http://d6vrtzdlbankn.cloudfront.net/wp-content/uploads/2017/01/FEB17_0004_Singapore-1.jpg" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Singapore</h5>
+                                    <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
+                                    <div class="rd-card-footer">
+                                        <div class="rd-card-footer-left">
+                                            <div class="rd-card-footer-icons">
+                                                <i class="fas fa-hotel"></i>
+                                                <i class="fas fa-utensils"></i>
+                                                <i class="fas fa-plane"></i>
+                                            </div>
+                                            <div class="text-muted">
+                                                <small>1000kms</small>
+                                            </div>
+                                        </div>
+                                        <div class="rd-card-footer-right">
+                                            <div class="rd-card-trip-cost">                                
+                                                <i class="fas fa-rupee-sign"></i> 38,800
+                                            </div>
+                                            <div class="text-muted">
+                                                <small> 2 night trip</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Row-2 -->
-            <div class="row rd-card-row">
-                <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/37242591.jpg?k=deb4d765a564823150f4758a47637a266cc0e43c35acd408a83527c05781e495&o=&hp=1" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Bora Bora</h5>
-                            <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
-                                    </div>
-                                </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
-                                    </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Paris</h5>
-                            <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
-                                    </div>
-                                </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
-                                    </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-4">
-                    <div class="card rd-card">
-                        <img class="card-img-top rd-card-img" src="https://i.natgeofe.com/n/4def1048-f5e5-4973-ad3a-e188a97d363f/regents-street-london-england.jpg" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">London</h5>
-                            <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
-                            <div class="rd-card-footer">
-                                <div class="rd-card-footer-left">
-                                    <div class="rd-card-footer-icons">
-                                        <i class="fas fa-hotel"></i>
-                                        <i class="fas fa-utensils"></i>
-                                        <i class="fas fa-plane"></i>
-                                    </div>
-                                    <div class="text-muted">
-                                        <small>1000kms</small>
-                                    </div>
-                                </div>
-                                <div class="rd-card-footer-right">
-                                    <div class="rd-card-trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i> 38,800
-                                    </div>
-                                    <div class="text-muted">
-                                        <small> 2 night trip</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
         <!-- Blogs -->
         <div class="blog">
