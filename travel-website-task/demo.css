@@ -1,15 +1,144 @@
-.card-img-top {
-    border-radius: 5px!important;
+.container{
+	padding:0,5px,0,5px;;
 }
-.card {
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2) !important;
-    border: 0px !important;;
+.text_image{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
 }
-.top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.carosal img{
+	opacity:0.7;
+	height:500px;
+	border:1px;
+	border-radius:30px;
+
 }
-.cost {
-    text-align: right;
+#img_first_txt{
+    font-size: 30px;
+
+}
+#beach_img{
+	filter: brightness(0.6);
+}
+.date{
+    color: black;
+    font-size: 10px;
+    margin-left: 12%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #f8f8ff9c;
+}
+.date .row strong{
+	padding-top:10px;
+}
+
+#ico2{
+
+	filter: grayscale();
+	padding: 2px;
+	border: 1px;
+	border-radius: 1rem;
+}
+.card-img-top{
+    width: 5rem;
+    height: 5rem;
+}
+
+.cardtab-body{
+    width: 25rem;
+    height: 25rem;
+}
+
+.cardtab-img{
+    width: 25rem;
+    height: 15rem;
+}
+
+.cardtab-text{
+    font-size: 0.8rem;
+}
+
+.cardtab-img-small{
+    width: 2rem;
+    height: 2rem;
+}
+
+.blog-img{
+    border-radius: 1rem;
+}
+#blog-img1{
+    width: 40rem;
+    height: 26.5rem;
+    position: absolute;
+}
+
+.blog-img2{
+    width: 35rem;
+    height: 13rem;
+    position: absolute;
+    border-radius: 1.5rem;
+}
+
+.blog-img3{
+    width: 35rem;
+    height: 13rem;
+    position: absolute;
+    border-radius: 2rem;
+}
+.text-on-blog-img{
+    position: relative;
+    font-size: 50px;
+    width: 40rem;
+    height: 26.5rem;
+    padding: 20px;
+    color: white;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text-on-blog-img2{
+    position: relative;
+    font-size: 30px;
+    width: 33.5rem;
+    height: 13rem;
+    margin-left: 0.7rem;
+    color: white;
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text-on-blog-img3{
+    position: relative;
+    font-size: 30px;
+    width: 33.5rem;
+    height: 13rem;
+    margin-top: 0.1rem;
+    margin-left: 0.7rem;
+    color: white;
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.double-quote{
+    color: #e1e8f8;
+    padding-top: 0.3rem;
+    padding-right: 1rem;
+}
+
+.footer{
+    background-color: #e1e8f8;
+    height: 5rem;
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+
+.nav-item.active{
+	font-weight:bold;
+	color:#15024d;
 }

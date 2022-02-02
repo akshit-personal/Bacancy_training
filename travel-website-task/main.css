@@ -7,6 +7,7 @@ body {
 }
 .img-thumbnail {
     padding: 0!important;
+    opacity: 0.8;
 }
 .center {
     text-align: center;
@@ -57,7 +58,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #000000fd;
     font-size: 30px;
     text-align: center;
 }
@@ -141,4 +142,57 @@ body {
 }
 .trip-days{
     font-size: 0.8rem!important;
+}
+
+
+
+/* Additonal */
+.blog-row {
+    text-align: center;
+    color: black;
+    margin-top: 70px;
+}
+
+.blog-left {
+    background: url(https://www.planetware.com/photos-large/IND/india-top-attractions-varanasi.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    /*  */
+    /*  */
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15% 10%;
+    border-radius: 15px;
+}
+.blog-right-row1{
+     background: url(https://images.unsplash.com/photo-1594937113195-27f8b9046013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWlycGxhbmUlMjB3aW5kb3clMjB2aWV3fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.blog-right-row2{
+     background: url(https://www.thebrokebackpacker.com/wp-content/uploads/2019/03/Buckingham-Palace.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15% 10%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+
+.blog-left-text {
+    padding: 2%;
 }
