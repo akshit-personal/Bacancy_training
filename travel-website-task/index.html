@@ -5,42 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Travel Website</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='try.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <script src="https://kit.fontawesome.com/0a520c1d94.js" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     
+    <script src='main.js'></script>
 </head>
 <body>
     <div class="container">
-    <!-- Navbar -->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Container wrapper -->
             <div class="container-fluid">
-                <!-- Navbar brand -->
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand" href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaeqIeszA6xuKoWGjbhM4o8YPL1ickrbBpyw3JS_ZdsGW3v58GEPpt3Aqd1ZVNFQ3_RCo&usqp=CAU" alt= "" height="30px" width="30px"/>
                     Travelo
                 </a>
-                <!-- Toggle button -->
-                <button
-                    class="navbar-toggler"
-                    type="button";
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                <i class="fas fa-bars"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <!-- Left links -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto-top">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-top">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -57,292 +41,258 @@
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-primary btn-design my-2 my-sm-0" type="submit">connect</button>
-                <!-- Left links -->
+                    <button class="btn btn-outline-primary nav-btn-design" type="submit">connect</button>
                 </div>
-                <!-- Collapsible wrapper -->
             </div>
-            <!-- Container wrapper -->
         </nav>
-    <!-- image -->
+        <!-- Home image -->
         <div class="home-img">
-        <img src="https://cdn.cnn.com/cnnnext/dam/assets/180508141319-03-amazing-places-africa---victoria-falls-full-169.jpg" alt="beach img" class="img-thumbnail">
-            <!-- <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/aerial-top-view-of-people-sitting-on-a-sandy-beach-royalty-free-image-1626357143.jpg" alt="beach img" class="img-thumbnail"> -->
-        <!-- <img src="https://www.holidify.com/images/bgImages/MALDIVES.jpg" alt="beach img" class="img-thumbnail"> -->
-            <div class="img-center">
-                <h1>TRAVEL TO EXPLORE</h1>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed.</h5>
-                <div class="flex-container">
-                    <div class="flex-1">
-                        <div class="flex-header">
-                            Where you want to go
-                        </div>
-                        <div class="flex-data">
-                            search your location
-                        </div>
-                    </div>
-                    <div class="flex-2">
-                        <p>Check-in <br>Add Date</p>
-                    </div>
-                    <div class="flex-3">
-                        <p>Check-out <br>Add Date</p>
-                    </div>
-                    <div class="flex-4">
-                        <button class="btn btn-primary">Explore now</button>
-                    </div>
-                </div>
+            <img class="img-fluid home-img-opacity" src="https://cdn.cnn.com/cnnnext/dam/assets/180508141319-03-amazing-places-africa---victoria-falls-full-169.jpg" alt="beach img">
+
+            <div class="home-img-text">
+                <p class="text-center fs-1 fw-bold home-img-text-para-header">TRAVEL TO EXPLORE</p>
+                <p class="text-center fs-6 fw-bold home-img-text-para-data">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed.</h5>
             </div>
         </div>
-    <!--Cards - 1x4 grid--> 
-        <div class="front-div">
+        <!-- Home- Card - grid 1x4-->
+        <div class="home-card-grid">
             <div class="row">
                 <div class="col">
-                    <div class="card">
-                        <i class="fas fa-award fa-3x front-icons"></i>
-                        <div class="card-body card-body-height">
+                    <div class="card card-design home-card-height">
+                        <div class="card-body">
+                            <i class="fas fa-award fa-3x home-card-grid-icons"></i>
                             <h5 class="card-title">Get Best Prices</h5>
                             <p class="card-text">Pay through our application and save thousands and get amazing rewards and goodies</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <i class="fas fa-virus fa-2x front-icons"></i>
-                        <div class="card-body card-body-height">
+                    <div class="card card-design home-card-height">
+                        <div class="card-body">
+                            <i class="fas fa-virus fa-2x home-card-grid-icons"></i>
                             <h5 class="card-title">Covid Safe</h5>
-                            <p class="card-text">We have all the curated hotels that have all the precaution for a covid safe environment.</p>
+                            <p class="card-text">We have all the curated hotels that have all the precaution for a covid safe environment</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <i class="far fa-credit-card fa-2x front-icons"></i>
-                        <div class="card-body card-body-height">
+                    <div class="card card-design home-card-height">
+                        <div class="card-body">
+                            <i class="fas fa-credit-card fa-2x home-card-grid-icons"></i>
                             <h5 class="card-title">Flexible Payment</h5>
-                            <p class="card-text">Enjoy the flexible payment through our app and get rewards on every payment.</p>
+                            <p class="card-text">Enjoy the flexible payment through our app and get rewards on every payment</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <i class="fas fa-universal-access fa-2x front-icons"></i>
-                        <div class="card-body card-body-height">
+                    <div class="card card-design home-card-height">
+                        <div class="card-body">
+                            <i class="fas fa-universal-access fa-2x home-card-grid-icons"></i>
                             <h5 class="card-title">Find The Best Near You</h5>
-                            <p class="card-text">Find the best hotels and places to visit near you in a single click, also get additional services.</p>
+                            <p class="card-text">Find the best hotels and places to visit near you in a single click, also get additional services</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <!--grid div complete-->
-        <div class="destination">
-            <h3 class="center">Recommended Destination</h3>
-
-            <!--  -->
-
-            <div class="ds-header">
-                <div class="ds-header-text ds-header-text-active">
-                    The Weekend Break
-                </div>
-                <div class="ds-header-text">
-                    The Package Holiday
-                </div>
-                <div class="ds-header-text">
-                    The Groud Tour
-                </div>
-                <div class="ds-header-text">
-                    Long Term Slow Travel
-                </div>
+        <!-- Recommended destinations -->
+        <div class="rd">
+            <h3 class="div-header">Recommended Destination</h3>
+            <div class="rd-nav">
+                <div class="rd-nav-tab rd-nav-tab-active">The Weekend Break</div>
+                <div class="rd-nav-tab">The Package Holiday</div>
+                <div class="rd-nav-tab">The Groud Tour</div>
+                <div class="rd-nav-tab">Long Term Slow Travel</div>
             </div>
-
-<!--  -->
-            <div class="row ds-card-row">
+            <!-- Row-1 -->
+            <div class="row rd-card-row">
                 <div class="col-4">
-                    <div class="card ds-card">
-                        <img class="card-img-top ds-card-img" src="https://imageio.forbes.com/blogs-images/alexcapri/files/2018/09/Singapore-1200x800.jpg?format=jpg&width=1200&fit=bounds" alt="Card image cap">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://imageio.forbes.com/blogs-images/alexcapri/files/2018/09/Singapore-1200x800.jpg?format=jpg&width=1200&fit=bounds" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Singapore</h5>
-                            <p class="card-text"> Singapore, officially the republic of Singapore, is a famous market</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">Singapore, officially the republic of Singapore, is a famous market</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               <div class="col-4">
-                    <div class="card ds-card">
-                        <img class="card-img-top ds-card-img" src="https://www.insidehook.com/wp-content/uploads/2021/10/New-Zealand.png?fit=1500%2C1000" alt="Card image cap">
+                 <div class="col-4">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://www.insidehook.com/wp-content/uploads/2021/10/New-Zealand.png?fit=1500%2C1000" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">New Zealand</h5>
-                            <p class="card-text">New Zealand is a island country.</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">New Zealand is a island country</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card ds-card" >
-                        <img class="card-img-top ds-card-img" src="https://www.croda.com/mediaassets/images/corporate/careers/our-locations/asia/bangkok.jpg?la=en-gb&w=1920&focalpointcrop=1&xratio=0&yratio=0&hash=BE9AC72800AF8610791FF2627B45BDA2FD10D502" alt="Card image cap">
+                 <div class="col-4">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://www.croda.com/mediaassets/images/corporate/careers/our-locations/asia/bangkok.jpg?la=en-gb&w=1920&focalpointcrop=1&xratio=0&yratio=0&hash=BE9AC72800AF8610791FF2627B45BDA2FD10D502" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Thailand</h5>
-                            <p class="card-text"> Thailand is a Southeast Asian country. It's known for its culture.</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">Thailand is a Southeast Asian country. It's known for its culture</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-            <div class="row ds-card-row">
+            <!-- Row-2 -->
+            <div class="row rd-card-row">
                 <div class="col-4">
-                    <div class="card ds-card">
-                        <img class="card-img-top ds-card-img" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/37242591.jpg?k=deb4d765a564823150f4758a47637a266cc0e43c35acd408a83527c05781e495&o=&hp=1" alt="Card image cap">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/37242591.jpg?k=deb4d765a564823150f4758a47637a266cc0e43c35acd408a83527c05781e495&o=&hp=1" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Bora Bora</h5>
-                            <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe.</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">Bora Bora is a small South Pacific island, situated at northwest of Europe</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               <div class="col-4">
-                    <div class="card ds-card">
-                        <img class="card-img-top ds-card-img" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" alt="Card image cap">
+                 <div class="col-4">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Paris</h5>
-                            <p class="card-text"> Paris, France's capital, is a major European city and a well known place for tourist.</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">Paris, France's capital, is a major European city and a well known place for tourist</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card ds-card" >
-                        <img class="card-img-top ds-card-img" src="https://i.natgeofe.com/n/4def1048-f5e5-4973-ad3a-e188a97d363f/regents-street-london-england.jpg" alt="Card image cap">
+                 <div class="col-4">
+                    <div class="card rd-card">
+                        <img class="card-img-top rd-card-img" src="https://i.natgeofe.com/n/4def1048-f5e5-4973-ad3a-e188a97d363f/regents-street-london-england.jpg" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">London</h5>
-                            <p class="card-text">London, the capital of England and the very famous United Kingdom city.</p>
-                            <div class="ds-card-add-data">
-                                <div class="">
-                                    <div class="rd-icons">
+                            <p class="card-text">London, the capital of England and the very famous United Kingdom city</p>
+                            <div class="rd-card-footer">
+                                <div class="rd-card-footer-left">
+                                    <div class="rd-card-footer-icons">
                                         <i class="fas fa-hotel"></i>
                                         <i class="fas fa-utensils"></i>
                                         <i class="fas fa-plane"></i>
                                     </div>
-                                    <div class="trip-kms">
-                                        1000kms
+                                    <div class="text-muted">
+                                        <small>1000kms</small>
                                     </div>
                                 </div>
-                                <div class="trip">
-                                    <div class="trip-cost">                                
-                                        <i class="fas fa-rupee-sign"></i>38,800
+                                <div class="rd-card-footer-right">
+                                    <div class="rd-card-trip-cost">                                
+                                        <i class="fas fa-rupee-sign"></i> 38,800
                                     </div>
-                                    <div class="trip-days">
-                                        Approx 2 night trip
+                                    <div class="text-muted">
+                                        <small> 2 night trip</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
         <!-- Blogs -->
-        <div class="blogs">
-            <h3 class="center">Blogs</h3>
+        <div class="blog">
+            <h3 class="div-header">Blogs</h3>
             <div class="row blog-row">
                 <div class="col-6 blog-left">
                     <div class="blog-left-text">
-                    The Ultimate package <br />
-                    for India<br />
+                        The Ultimate package <br />
+                        for India<br />
                     </div>
                 </div>
                 <div class="col-6 blog-right">
@@ -355,62 +305,17 @@
                         Female Travelers
                     </div>
                 </div>
-
-
-
-
-
-
-
-                <!-- <div class="col-6">
-                     <div class="col">
-                        <div class="card">
-                            <img src="https://www.worldatlas.com/upload/6e/03/29/shutterstock-662889487.jpg" alt=".." class="card-img-top" />                            
-                            <div class="img-center"><strong>The ultimate guide to Climbing Mount Kilimanjaro</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-               <!-- <div class="col-6">
-                    left col
-                     <div class="col">
-                        <div class="card">
-                            <img src="https://cdn.britannica.com/33/153433-050-F76BDF75/Sunrise-Mount-Kilimanjaro-Tanzania.jpg" alt=".." class="card-img-top" />                            
-                              <div class="img-center"><strong>The ultimate guide to Climbing Mount Kilimanjaro</strong></div>
-                        </div>
-                    </div>
-                </div>  -->
-                <!-- <div class="col-6">  
-                    <div class="row">
-                         <div class="col">
-                            <div class="card">
-                                <img src="https://www.worldatlas.com/upload/6e/03/29/shutterstock-662889487.jpg" alt=".." class="card-img-top" />                            
-                                <div class="img-center"><strong>The ultimate guide to Climbing Mount Kilimanjaro</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://www.worldatlas.com/upload/6e/03/29/shutterstock-662889487.jpg" alt=".." class="card-img-top" />                            
-                                    <div class="img-center"><strong>The ultimate guide to Climbing Mount Kilimanjaro</strong>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <!-- Customer Stories -->
-        <div class="customer-stories">
-            <h3 class="center cs-margin-header">Happy Customers</h3>
+        <div class="cs">
+            <h3 class="div-header">Happy Customers</h3>
             <div class="row cs-margin">
                 <div class="col">
-                    <div class="card">
+                    <div class="card card-design cs-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-1">
+                                <div class="col-1 text-muted">
                                     <i class="fas fa-quote-left quote-color fa-2x"></i>
                                 </div>
                                 <div class="col-11">
@@ -418,23 +323,24 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-2">
-                                            <img src="https://www.gravatar.com/avatar/1b8fabaa8d66250a7049bdb9ecf44397?s=250&d=mm&r=x" class="rounded-circle" alt="img" height="50px"> 
+                                            <img class="img-fluid rounded-circle " src="https://www.gravatar.com/avatar/1b8fabaa8d66250a7049bdb9ecf44397?s=250&d=mm&r=x" alt="img" height="50px"> 
                                         </div>
                                         <div class="col-10">
                                             <p class="card-text">Shalini Singh</p>
-                                            <p class="card-text">Project Manager flyhigh</p>
+                                            <p class="text-muted">Project Manager flyhigh</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                 <div class="col">
+                    <div class="card card-design cs-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-1">
+                                <div class="col-1 text-muted">
                                     <i class="fas fa-quote-left quote-color fa-2x"></i>
                                 </div>
                                 <div class="col-11">
@@ -442,29 +348,29 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-2">
-                                            <img src="https://www.gravatar.com/avatar/1b8fabaa8d66250a7049bdb9ecf44397?s=250&d=mm&r=x" class="rounded-circle" alt="img" height="50px"> 
+                                            <img class="img-fluid rounded-circle " src="https://www.gravatar.com/avatar/1b8fabaa8d66250a7049bdb9ecf44397?s=250&d=mm&r=x" alt="img" height="50px"> 
                                         </div>
                                         <div class="col-10">
                                             <p class="card-text">Shalini Singh</p>
-                                            <p class="card-text">Project Manager flyhigh</p>
+                                            <p class="text-muted">Project Manager flyhigh</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer -->
-        <footer class="page-footer">
+        <footer class="footer">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-5">
-                       <p>Copyright &COPY;2020Travelo. All rights reserved </p> 
+                       <p class="footer-para-middle-align">Copyright <i class="fas fa-copyright" aria-hidden="true"></i>  2020 Travelo. All rights reserved </p> 
                     </div>
                     <div class="col-6">
-                        <nav class="nav navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-lg navbar-light">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -496,12 +402,10 @@
                                 <i class="fab fa-instagram fa-lg" ></i> 
                             </div>
                         </div>
-                        <!-- rgb(225, 232, 248) -->
                     </div>
                 </div>                
             </div>
         </footer>
-</div>
-
+    </div>
 </body>
 </html>
